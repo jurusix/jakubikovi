@@ -1,0 +1,36 @@
+body {
+    color: #282425;
+    background-color: #fff1e6;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+h1
+ {
+    color: #756158;
+    font-size: 35px;
+    font-family: 'Playfair Display', serif;
+    font-style: italic; 
+}
+
+
+.omne {
+    padding: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 790px;
+    margin-top: 60px;
+}
+
+p {
+    font-size: 22px;
+}
+
+.foto-deny {
+    width: 320px;
+    border-radius: 0 50px 50px 50px;
+    float: left;
+    margin: 0 30px;
+}
