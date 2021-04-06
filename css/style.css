@@ -798,10 +798,10 @@ h3 {
 
 .slider_area_inner .slider_text {
   position: absolute;
-  right: 8%;
-  top: 3%;
+  right: 5%;
+  top: 6%;
   background-size: cover;
-  padding: 130px 30px 120px 90px;
+  padding: 60px;
   z-index: 10;
 }
 
@@ -825,7 +825,7 @@ h3 {
   font-size: 20px;
   font-weight: 600;
   font-family: 'Muli', sans-serif;
-  color: rgb(255 255 255 / 70%);
+  color: #fff;
   line-height: 2;
 }
 
@@ -833,7 +833,7 @@ h3 {
   font-size: 32px;
   font-family: 'Petit Formal Script', cursive;
   font-weight: 400;
-  color: rgb(255 255 255 / 70%);
+  color: #fff;
   line-height: 2;
   font-weight: bold;
 }
