@@ -1,6 +1,6 @@
-'use strict';
+'use strict'
 
-const CACHE_NAME = 'rejlkovi-v4.0';
+const CACHE_NAME = 'rejlkovi-v4.0'
 
 const FILES_TO_CACHE = [
   '/',
@@ -20,8 +20,8 @@ const FILES_TO_CACHE = [
   '/fonts/muli-500-latin-ext.woff2',
   '/fonts/muli-600-latin.woff2',
   '/fonts/muli-600-latin-ext.woff2',
-  '/fonts/petit-formal-script-latin.woff2',
-  '/fonts/petit-formal-script-latin-ext.woff2',
+  '/fonts/parisienne-v8-latin-ext_latin-regular.woff',
+  '/fonts/parisienne-v8-latin-ext_latin-regular.woff2',
   '/img/appointment/flower-bottom.png',
   '/img/appointment/flower-top.png',
   '/img/banner/bg.jpg',
@@ -59,40 +59,41 @@ const FILES_TO_CACHE = [
   '/js/jquery.slicknav.min.js',
   '/js/nice-select.min.js',
   '/js/main.js',
-  '/js/install.js'
-];
+  '/js/install.js',
+]
 
 self.addEventListener('install', (evt) => {
   evt.waitUntil(
     caches.open(CACHE_NAME).then((cache) => {
-      return cache.addAll(FILES_TO_CACHE);
+      return cache.addAll(FILES_TO_CACHE)
     })
-  );
+  )
 
-  self.skipWaiting();
-});
+  self.skipWaiting()
+})
 
 self.addEventListener('activate', (evt) => {
   evt.waitUntil(
     caches.keys().then((keyList) => {
-      return Promise.all(keyList.map((key) => {
-        if (key !== CACHE_NAME) {
-          return caches.delete(key);
-        }
-      }));
+      return Promise.all(
+        keyList.map((key) => {
+          if (key !== CACHE_NAME) {
+            return caches.delete(key)
+          }
+        })
+      )
     })
-  );
+  )
 
-  self.clients.claim();
-});
+  self.clients.claim()
+})
 
 self.addEventListener('fetch', (evt) => {
   evt.respondWith(
     caches.open(CACHE_NAME).then((cache) => {
-      return cache.match(evt.request)
-        .then((response) => {
-          return response || fetch(evt.request);
-        });
+      return cache.match(evt.request).then((response) => {
+        return response || fetch(evt.request)
+      })
     })
-  );
-});
+  )
+})

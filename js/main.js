@@ -20,7 +20,7 @@
       )
     }
 
-    $('#clock').countdown('2021/06/13 15:00:00', function (event) {
+    $('#clock').countdown('2021/08/29 15:00:00', function (event) {
       $(this).html(
         event.strftime(
           '<div class="countdown_wrap d-flex"><div  class="single_countdown"><h3>%D</h3><span>Dny</span></div><div class="single_countdown"><h3>%H</h3><span>Hodiny</span></div><div class="single_countdown"><h3>%M</h3><span>Minuty</span></div><div class="single_countdown"><h3>%S</h3><span>Sekundy</span></div></div>'
