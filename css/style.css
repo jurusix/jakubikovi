@@ -885,6 +885,7 @@ h3 {
   font-size: 14px;
   font-weight: 400;
   text-transform: uppercase;
+  font-family: 'Muli', sans-serif;
 }
 
 .program_bg_1 {
@@ -1156,6 +1157,7 @@ h3 {
 }
 
 .love_story_area .single_lover_story span {
+  font-family: 'Muli', sans-serif;
   font-size: 24px;
   font-weight: 400;
   margin-top: 33px;
@@ -1213,6 +1215,10 @@ h3 {
   padding-bottom: 15px;
   padding-top: 15px;
   position: relative;
+}
+
+.love_story_area .weding_time_line .single_time_line h5 {
+  font-family: 'Muli', sans-serif;
 }
 
 .love_story_area .weding_time_line .single_time_line h3 {
