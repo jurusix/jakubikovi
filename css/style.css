@@ -945,6 +945,10 @@ h3 {
   font-family: 'Muli', sans-serif;
 }
 
+.alert.info {
+  font-family: 'Muli', sans-serif;
+}
+
 .attending_area {
   padding-top: 200px;
   padding-bottom: 280px;
