@@ -25,6 +25,7 @@ const FILES_TO_CACHE = [
   '/img/appointment/flower-bottom.png',
   '/img/appointment/flower-top.png',
   '/img/banner/bg.jpg',
+  '/img/banner/zadost.jpg',
   '/img/banner/bg-mobil.jpg',
   '/img/banner/flower-bottom.png',
   '/img/banner/flower-top.png',
